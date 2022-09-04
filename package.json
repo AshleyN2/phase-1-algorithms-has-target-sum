@@ -10,6 +10,7 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
     "chai": "^4.3.4",
+    "learn": "^0.1.5",
     "mocha": "^6.2.3",
     "mocha-multi": "^1.1.3"
   }

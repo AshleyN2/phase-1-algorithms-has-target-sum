@@ -1,13 +1,35 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  const numbers = {};
+
+  for (const number of array) {
+    //n steps
+    const sumPair = target - number;
+    if (sumPair in numbers) return true;
+    numbers[number] = true;
+
+  }
+  return false;
 }
 
 /* 
   Write the Big O time complexity of your function here
+
+Quadratic time O(n^2) : given an input array of n elements, the worst case scenario]
+is that the algorithm needs to take n^2 iterations.
+
 */
 
 /* 
   Add your pseudocode here
+
+declare a function hasTargetSum that takes 2 arguments(array, target)
+iterate through items in array
+  if any pair items add up to target
+    return true
+  else
+    return false
+
 */
 
 /*
